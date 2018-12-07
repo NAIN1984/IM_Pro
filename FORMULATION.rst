@@ -9,4 +9,4 @@ Formulation
     
  :math:`\alpha > \beta`
  
- :math:`\\alpha`
+ :math:'\\alpha'
