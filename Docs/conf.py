@@ -28,7 +28,21 @@ import os
 # Add any Sphinx extension module names here, as strings. They can be
 # extensions coming with Sphinx (named 'sphinx.ext.*') or your custom
 # ones.
-extensions = []
+
+if on_rtd:
+   extensions = ['sphinx.ext.todo', 'sphinx.ext.pngmath', 'sphinx.ext.mathjax', 'sphinx.ext.graphviz']
+else:
+   extensions = ['sphinx.ext.todo', 'sphinx.ext.pngmath', 'sphinx.ext.mathjax', 'sphinx.ext.graphviz', 'sphinxcontrib.bibtex', 'sphinxcontrib.plantuml', 'sphinxcontrib.exceltable']
+	
+   # NOTE - THIS IS A QUICK AND DIRTY SOLUTION
+   #        PUT A COPY OF plantuml.jar IN THE ../utils FOLDER
+   #        WHERE THE PATH IS RELATIVE TO THE make FILE LOCATION.
+   plantuml = 'java -jar ../utils/plantuml.jar'
+   
+   import sphinx_bootstrap_theme
+
+
+#extensions = []
 
 # Add any paths that contain templates here, relative to this directory.
 templates_path = ['_templates']
