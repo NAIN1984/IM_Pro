@@ -1,1 +1,0 @@
-.. include:: ../Formulation.rst
