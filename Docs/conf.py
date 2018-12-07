@@ -33,9 +33,9 @@ on_rtd = os.environ.get('READTHEDOCS', None) == 'True'
 # ones.
 
 if on_rtd:
-   extensions = ['sphinx.ext.todo', 'sphinx.ext.imgmath', 'sphinx.ext.mathjax', 'sphinx.ext.graphviz']
+   extensions = ['sphinx.ext.todo', 'sphinx.ext.imgmath', 'sphinx.ext.graphviz']
 else:
-   extensions = ['sphinx.ext.todo', 'sphinx.ext.imgmath', 'sphinx.ext.mathjax', 'sphinx.ext.graphviz', 'sphinxcontrib.bibtex', 'sphinxcontrib.plantuml', 'sphinxcontrib.exceltable']
+   extensions = ['sphinx.ext.todo', 'sphinx.ext.imgmath', 'sphinx.ext.graphviz', 'sphinxcontrib.bibtex', 'sphinxcontrib.plantuml', 'sphinxcontrib.exceltable']
 	
    # NOTE - THIS IS A QUICK AND DIRTY SOLUTION
    #        PUT A COPY OF plantuml.jar IN THE ../utils FOLDER
