@@ -1,4 +1,4 @@
 
-FORMULATION
+Formulation
 -------
-
+.. include:: ../formulation.md
